@@ -23,7 +23,7 @@ export default function App() {
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
-
+  
   const submit = () => {
     alert(`🎉 Submitted: ${JSON.stringify(form, null, 2)}`);
     setStep(1);
